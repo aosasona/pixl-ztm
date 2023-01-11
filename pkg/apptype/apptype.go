@@ -29,8 +29,5 @@ type Brushable interface {
 }
 
 func (state *State) SetFilePath(path string) {
-	if path == "" {
-		panic("invalid file path")
-	}
 	state.FilePath = path
 }
